@@ -32,15 +32,17 @@ function NavbarContent({ data = site.navbar }: NavbarProps) {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full px-3  xl:px-10 pt-4 sm:pt-5 pointer-events-none transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full px-3 xl:px-10 pt-4 sm:pt-5 pointer-events-none transition-all duration-300">
       {/* Outer Pill */}
       <nav
         aria-label="Main Navigation"
-        className={`pointer-events-auto mx-auto w-full max-w-[1320px] bg-white transition-all duration-300 ${mobileMenuOpen ? "rounded-[28px]" : "rounded-full"
-          } ${isScrolled
-            ? "shadow-[0_16px_40px_rgba(34,92,192,0.18)] border border-slate-100/90 py-2 sm:py-2.5 px-4 "
-            : "shadow-[0_8px_32px_rgba(20,50,110,0.12)] border border-white/60 py-2 sm:py-2.5 px-4 "
-          }`}
+        className={`pointer-events-auto mx-auto w-full max-w-[1320px] bg-white transition-[background-color,box-shadow,border-color] duration-200 ${
+          mobileMenuOpen ? "rounded-[24px]" : "rounded-full"
+        } ${
+          isScrolled
+            ? "shadow-[0_16px_40px_rgba(34,92,192,0.18)] border border-slate-100/90 py-2 sm:py-2.5 px-4"
+            : "shadow-[0_8px_32px_rgba(20,50,110,0.12)] border border-white/60 py-2 sm:py-2.5 px-4"
+        }`}
       >
         <div className="flex items-center justify-between gap-3 sm:gap-4">
           {/* LEFT: Brand Logo */}

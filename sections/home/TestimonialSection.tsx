@@ -52,15 +52,15 @@ export default function TestimonialSection({ data = site.testimonials }: Testimo
         </div>
 
         {/* Testimonials Masonry */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-20 items-start">
           {/* Left Column */}
-          <div className="flex flex-col space-y-12 lg:space-y-16">
+          <div className="flex flex-col space-y-4 lg:space-y-16">
             {/* Card 1 */}
             {itemLeft1 && <TestimonialCard item={itemLeft1} />}
 
             {/* Card 3 */}
             {itemLeft2 && (
-              <TestimonialCard item={itemLeft2} className="pt-2 lg:pt-6" />
+              <TestimonialCard item={itemLeft2} className="pt-1 lg:pt-6" />
             )}
           </div>
 
@@ -72,7 +72,7 @@ export default function TestimonialSection({ data = site.testimonials }: Testimo
 
             {/* Card 4 */}
             {itemRight2 && (
-              <TestimonialCard item={itemRight2} className="pt-10 lg:pt-14" />
+              <TestimonialCard item={itemRight2} className="pt-6 lg:pt-14" />
             )}
           </div>
         </div>

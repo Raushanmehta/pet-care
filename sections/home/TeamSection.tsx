@@ -22,7 +22,7 @@ export default function TeamSection({ data = site.team, className = "" }: TeamSe
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-4 sm:mb-8">
           {/* Tagline Badge */}
           <div className="inline-flex items-center gap-3 mb-2">
             <span className="w-12 h-[2.5px] bg-[#225cc0]/60 rounded-full" />
@@ -42,7 +42,7 @@ export default function TeamSection({ data = site.team, className = "" }: TeamSe
           </h2>
 
           {/* Subheadline description */}
-          <p className="font-roboto text-sm sm:text-base text-[#4b5563] leading-relaxed max-w-2xl">
+          <p className="font-roboto text-[15px] sm:text-base text-[#4b5563] leading-relaxed max-w-2xl">
             {team.subheadline}
           </p>
         </div>

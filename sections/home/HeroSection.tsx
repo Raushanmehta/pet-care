@@ -77,10 +77,28 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
       {/* Main Content Container */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
-          {/* LEFT COLUMN: */}
-          <div className="lg:col-span-7 flex flex-col items-start z-10">
+          {/* IMAGE COLUMN */}
+          <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end items-center relative pb-1 lg:pb-12 w-full lg:w-auto">
+            {/* Outer Dashed */}
+            <div className="relative p-2.5 sm:p-3 rounded-[110px] sm:rounded-[140px] md:rounded-[170px] lg:rounded-[190px] border-2 border-dashed border-white/95 shadow-[0_20px_60px_rgba(0,0,0,0.22)] w-full max-w-[460px] lg:w-auto lg:max-w-none flex justify-center">
+              {/* Inner Clipped */}
+              <div className="relative w-full max-w-[340px] sm:max-w-[400px] md:max-w-[440px] lg:w-[430px] lg:max-w-none h-[450px] sm:h-[450px] md:h-[500px] lg:h-[560px] rounded-[100px] sm:rounded-[130px] md:rounded-[160px] lg:rounded-[180px] overflow-hidden bg-slate-100 shadow-inner">
+                <Image
+                  src={data.image.src || "/images/hero-puppy.webp"}
+                  alt={data.image.alt || "Cute Golden Puppy"}
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 430px"
+                  className="object-cover object-center transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* CONTENT COLUMN */}
+          <div className="lg:col-span-7 order-2 lg:order-1 flex flex-col items-start z-10">
             {/* Main Headline */}
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[76px] font-medium tracking-tight text-white leading-[1.08] mb-6">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[68px] xl:text-[76px] font-medium tracking-tight text-white leading-[1.08] mb-4 md:mb-6">
               <span className="block drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
                 {data.headline.line1}
               </span>
@@ -89,8 +107,8 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
               </span>
             </h1>
 
-            {/* Subheadline (clean */}
-            <div className="w-full flex justify-end pr-4 sm:pr-8 md:pr-12 lg:pr-16 mb-12 sm:mb-16 md:mb-20">
+            {/* Subheadline */}
+            <div className="w-full flex justify-end pr-0 sm:pr-8 md:pr-12 lg:pr-16 mb-6 sm:mb-8 md:mb-20">
               <p className="font-poppins text-xs sm:text-[13px] md:text-[13.5px] text-white/95 leading-relaxed max-w-[340px] text-left">
                 {data.subheadline}
               </p>
@@ -117,24 +135,6 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
                     </span>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT COLUMN: */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end items-center relative pb-8 lg:pb-12">
-            {/* Outer Dashed */}
-            <div className="relative p-2.5 sm:p-3 rounded-[110px] sm:rounded-[140px] md:rounded-[170px] lg:rounded-[190px] border-2 border-dashed border-white/95 shadow-[0_20px_60px_rgba(0,0,0,0.22)]">
-              {/* Inner Clipped */}
-              <div className="relative w-[290px] sm:w-[350px] md:w-[390px] lg:w-[430px] h-[370px] sm:h-[450px] md:h-[500px] lg:h-[560px] rounded-[100px] sm:rounded-[130px] md:rounded-[160px] lg:rounded-[180px] overflow-hidden bg-slate-100 shadow-inner">
-                <Image
-                  src={data.image.src || "/images/hero-puppy.webp"}
-                  alt={data.image.alt || "Cute Golden Puppy"}
-                  fill
-                  priority
-                  sizes="(max-width: 640px) 290px, (max-width: 768px) 350px, (max-width: 1024px) 390px, 430px"
-                  className="object-cover object-center transition-transform duration-500 hover:scale-105"
-                />
               </div>
             </div>
           </div>

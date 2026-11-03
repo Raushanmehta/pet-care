@@ -27,7 +27,7 @@ export default function AboutSection({ data = site.about }: AboutSectionProps) {
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         {/* UPPER ROW: */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start mb-6 sm:mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-6 items-start mb-6 sm:mb-8">
           {/* Left Column: */}
           <div className="lg:col-span-7 flex flex-col items-start">
             {/* Tagline Badge */}
@@ -55,13 +55,13 @@ export default function AboutSection({ data = site.about }: AboutSectionProps) {
           </div>
 
           {/* Right Column: */}
-          <div className="lg:col-span-5 flex flex-col items-start pt-2 lg:pt-6 relative">
+          <div className="lg:col-span-5 flex flex-col items-start pt-1 lg:pt-6 relative">
             {/* Hand-drawn arrow */}
             <div className="hidden lg:block absolute -top-4 -left-12 text-[#225cc0] pointer-events-none">
               <CurvedArrowDoodle />
             </div>
 
-            <p className="font-roboto text-sm sm:text-base text-[#4b5563] leading-relaxed">
+            <p className="font-roboto text-[15px] sm:text-base text-[#4b5563] leading-relaxed">
               {data.description}
             </p>
           </div>
@@ -101,11 +101,11 @@ export default function AboutSection({ data = site.about }: AboutSectionProps) {
                     </div>
 
                     {/* Feature Text */}
-                    <div className="flex flex-col">
-                      <h3 className="font-semibold text-[16px] sm:text-[17px] text-[#111827] tracking-tight leading-snug mb-1">
+                    <div className="flex flex-col i">
+                      <h3 className="font-semibold text-[16px] sm:text-[17px] text-[#111827] tracking-tight leading-snug ">
                         {feature.title}
                       </h3>
-                      <p className="font-roboto text-xs sm:text-sm text-[#6b7280] leading-relaxed">
+                      <p className="font-roboto text-sm sm:text-base text-[#6b7280] leading-relaxed">
                         {feature.description}
                       </p>
                     </div>
@@ -126,7 +126,7 @@ export default function AboutSection({ data = site.about }: AboutSectionProps) {
             <div className="relative w-full max-w-[390px] sm:max-w-[500px] aspect-[1/1.08]">
               {/* Tilted Soft */}
               <div
-                className="absolute inset-y-[-16px] sm:inset-y-[-24px] inset-x-[14px] sm:inset-x-[20px] bg-[#d9e8fb] rounded-[36px] sm:rounded-[44px] rotate-8 sm:rotate-9 pointer-events-none"
+                className="hidden sm:block absolute inset-y-[-16px] sm:inset-y-[-24px] inset-x-[14px] sm:inset-x-[20px] bg-[#d9e8fb] rounded-[36px] sm:rounded-[44px] rotate-8 sm:rotate-9 pointer-events-none"
                 style={{ transformOrigin: "center center" }}
               />
 

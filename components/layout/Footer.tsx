@@ -89,7 +89,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                 />
               </Link>
 
-              <p className="font-roboto text-[13.5px] sm:text-[15px] text-white/90 leading-relaxed max-w-[360px] mb-6">
+              <p className="font-roboto text-[15px] sm:text-[15px] text-white/90 leading-relaxed max-w-[360px] mb-6">
                 {data.description}
               </p>
 
@@ -144,7 +144,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                   <h4 className="font-poppins font-medium text-[16px] text-white leading-snug">
                     {data.location.title}
                   </h4>
-                  <p className="font-roboto text-[13px] sm:text-[14px] text-white/85 leading-relaxed mt-0.5 space-y-0.5">
+                  <p className="font-roboto text-[15px] sm:text-[14px] text-white/85 leading-relaxed mt-0.5 space-y-0.5">
                     {data.location.addressLines}
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                   <h4 className="font-poppins font-medium text-[16px] text-white leading-snug">
                     {data.contact.phone.title}
                   </h4>
-                  <div className="flex flex-col font-roboto text-[13px] sm:text-[14px] text-white/85 mt-0.5 space-y-0.5">
+                  <div className="flex flex-col font-roboto text-[15px] sm:text-[14px] text-white/85 mt-0.5 space-y-0.5">
                     {data.contact.phone.numbers.map((item) => (
                       <a
                         key={item.display}
@@ -182,7 +182,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                   <h4 className="font-poppins font-medium text-[16px] text-white leading-snug">
                     {data.contact.email.title}
                   </h4>
-                  <div className="flex flex-col font-roboto text-[13px] sm:text-[14px] text-white/85 mt-0.5 space-y-0.5">
+                  <div className="flex flex-col font-roboto text-[15px] sm:text-[14px] text-white/85 mt-0.5 space-y-0.5">
                     {data.contact.email.addresses.map((item) => (
                       <a
                         key={item.display}

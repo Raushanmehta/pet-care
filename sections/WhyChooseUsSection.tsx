@@ -112,7 +112,7 @@ export default function WhyChooseUsSection({
                       <h3 className="font-poppins font-semibold text-[16px] sm:text-[17px] text-white tracking-tight leading-snug mb-1">
                         {data.mission.title}
                       </h3>
-                      <p className="font-roboto text-xs sm:text-sm text-white/85 leading-relaxed">
+                      <p className="font-roboto text-[15px] sm:text-sm text-white/85 leading-relaxed">
                         {data.mission.description}
                       </p>
                     </div>
@@ -128,7 +128,7 @@ export default function WhyChooseUsSection({
                       <h3 className="font-semibold text-[16px] sm:text-[17px] text-white tracking-tight leading-snug mb-1">
                         {data.vision.title}
                       </h3>
-                      <p className="font-roboto text-xs sm:text-sm text-white/85 leading-relaxed">
+                      <p className="font-roboto text-[15px] sm:text-sm text-white/85 leading-relaxed">
                         {data.vision.description}
                       </p>
                     </div>

@@ -68,7 +68,7 @@ export default function ServiceDetailSection({
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
 
                     {/* ================= LEFT */}
-                    <aside className="lg:col-span-4 w-full flex flex-col gap-6 lg:sticky lg:top-28 z-20 self-start">
+                    <aside className="lg:col-span-4 order-2 lg:order-1 w-full flex flex-col gap-6 lg:sticky lg:top-28 z-20 self-start">
 
                         {/* 1. Services */}
                         {sidebar && (
@@ -129,7 +129,7 @@ export default function ServiceDetailSection({
                     </aside>
 
                     {/* ================= RIGHT */}
-                    <main className="lg:col-span-8 w-full flex flex-col gap-5">
+                    <main className="lg:col-span-8 order-1 lg:order-2 w-full flex flex-col gap-5">
 
                         {/* 1. Hero */}
                         <div className="relative w-full aspect-[16/9] sm:aspect-[16/8.5] rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.06)] bg-slate-100">

@@ -170,7 +170,7 @@
               {
                 "id": "services",
                 "label": "Services",
-                "href": "/services",
+                "href": "",
                 "children": [
                   {
                     "label": "Pet Grooming",
@@ -268,7 +268,7 @@
               {
                 "id": "rehabilitation",
                 "title": "Rehabilitation",
-                "description": "We provide medical care, training and love to help pets heal and adapt.",
+                "description": "We provide medical care, training heal and adapt.",
                 "icon": "shelter",
                 "badgeBg": "#fef3d6",
                 "iconColor": "#0f1418"
