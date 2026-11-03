@@ -1,0 +1,1317 @@
+{
+  "Petcare": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "navbar": "PetcareNavbar1",
+          "footer": "PetcareFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "hero",
+                "component": "PetcareHero1"
+              },
+              {
+                "key": "about",
+                "component": "PetcareAbout1"
+              },
+              {
+                "key": "services",
+                "component": "PetcareServices1"
+              },
+              {
+                "key": "testimonials",
+                "component": "PetcareTestimonials1"
+              },
+              {
+                "key": "stats",
+                "component": "PetcareStats1"
+              },
+              {
+                "key": "team",
+                "component": "PetcareTeam1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "about",
+                "component": "PetcareAbout1"
+              },
+              {
+                "key": "whyChooseUs",
+                "component": "PetcareWhyChooseUs1"
+              },
+              {
+                "key": "testimonials",
+                "component": "PetcareTestimonials1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "services",
+                "component": "PetcareServices1"
+              },
+              {
+                "key": "team",
+                "component": "PetcareTeam1"
+              }
+            ]
+          },
+          "gallery": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "gallery",
+                "component": "PetcareGallery1"
+              }
+            ]
+          },
+          "team": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "team",
+                "component": "PetcareTeam1"
+              }
+            ]
+          },
+          "faqs": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "faqs",
+                "component": "PetcareFaqs1"
+              }
+            ]
+          },
+          "pricing": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "pricing",
+                "component": "PetcarePricing1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "contact",
+                "component": "PetcareContact1"
+              }
+            ]
+          },
+          "appointment": {
+            "components": [
+              {
+                "key": "breadcrumb",
+                "component": "PetcareBreadcrumb1"
+              },
+              {
+                "key": "appointment",
+                "component": "PetcareAppointment1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "navbar": {
+        "variants": {
+          "PetcareNavbar1": {
+            "brand": {
+              "name": "PetCare",
+              "logo": "/logo/logo.webp",
+              "alt": "PetCare - Happy Pets, Happier Lives",
+              "href": "/"
+            },
+            "navLinks": [
+              {
+                "id": "home",
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "id": "about",
+                "label": "About",
+                "href": "/about"
+              },
+              {
+                "id": "services",
+                "label": "Services",
+                "href": "/services",
+                "children": [
+                  {
+                    "label": "Pet Grooming",
+                    "href": "/services/pet-grooming"
+                  },
+                  {
+                    "label": "Vaccinations",
+                    "href": "/services/vaccinations"
+                  },
+                  {
+                    "label": "Diagnostics",
+                    "href": "/services/diagnostics"
+                  },
+                  {
+                    "label": "Dental Care",
+                    "href": "/services/dental-care"
+                  },
+                  {
+                    "label": "Surgery",
+                    "href": "/services/surgery"
+                  }
+                ]
+              },
+              {
+                "id": "gallery",
+                "label": "Gallery",
+                "href": "/gallery"
+              },
+              {
+                "id": "team",
+                "label": "Team",
+                "href": "/team"
+              },
+              {
+                "id": "contact",
+                "label": "Contact",
+                "href": "/contact"
+              }
+            ],
+            "cta": {
+              "label": "Book Appointment",
+              "href": "/contact"
+            }
+          }
+        }
+      },
+      "hero": {
+        "variants": {
+          "PetcareHero1": {
+            "headline": {
+              "line1": "Reliable Pet Care",
+              "line2": "You Can Count On"
+            },
+            "subheadline": "Gentle, modern veterinary care designed for your beloved companion's well-being",
+            "stats": [
+              {
+                "value": "24/7",
+                "label": "Care Available"
+              },
+              {
+                "value": "500+",
+                "label": "Happy Pets"
+              },
+              {
+                "value": "10+",
+                "label": "Years Experience"
+              }
+            ],
+            "image": {
+              "src": "/images/hero-puppy.png",
+              "alt": "Adorable golden retriever puppy sitting attentively"
+            }
+          }
+        }
+      },
+      "about": {
+        "variants": {
+          "PetcareAbout1": {
+            "tag": "ABOUT US",
+            "headline": {
+              "line1": "Creating a World Where",
+              "line2": "Every Paw Finds A",
+              "highlight": "Loving Home"
+            },
+            "description": "At PetCare, we are passionate about the health, happiness and well-being of every pet. Our experienced team provides trusted veterinary care, professional grooming, expert training and reliable pet sitting services to keep your furry friends safe, healthy and loved.",
+            "features": [
+              {
+                "id": "rescue",
+                "title": "Rescue Animals",
+                "description": "We support and care for vulnerable animals.",
+                "icon": "paw",
+                "badgeBg": "#e8f1fc",
+                "iconColor": "#225cc0"
+              },
+              {
+                "id": "rehabilitation",
+                "title": "Rehabilitation",
+                "description": "We provide medical care, training and love to help pets heal and adapt.",
+                "icon": "shelter",
+                "badgeBg": "#fef3d6",
+                "iconColor": "#0f1418"
+              }
+            ],
+            "images": {
+              "teamPet": {
+                "src": "/images/about-team-pet.png",
+                "alt": "Happy couple sitting outdoors with their golden retriever"
+              },
+              "dog": {
+                "src": "/images/about-dog.png",
+                "alt": "Playful and happy Jack Russell dog smiling outdoors"
+              }
+            }
+          }
+        }
+      },
+      "services": {
+        "variants": {
+          "PetcareServices1": {
+            "tag": "OUR SERVICES",
+            "headline": "Comprehensive Pet Care Services",
+            "subheadline": "From wellness care to grooming and training, we offer a full range of services to keep your pets healthy, happy and well cared for.",
+            "items": [
+              {
+                "id": "vaccinations",
+                "title": "Vaccinations",
+                "description": "Essential vaccines to protect pets from common and preventable diseases.",
+                "image": "/images/services/service-vaccinations.jpg",
+                "icon": "vaccine",
+                "ctaText": "Read More",
+                "ctaHref": "/services/vaccinations",
+                "paragraphs": [
+                  "Protecting your companion against fatal infectious diseases begins with timely and complete immunization schedules tailored to their age, lifestyle, and breed.",
+                  "Our veterinary team administers core and non-core vaccines adhering to the highest global safety standards, keeping accurate computerized health records and sending timely booster reminders."
+                ],
+                "whatsIncluded": {
+                  "title": "What's Included?",
+                  "items": [
+                    "Core Puppy / Kitten Vaccines",
+                    "Rabies & Distemper Protection",
+                    "Deworming & Parasite Prevention",
+                    "Digital Immunization Record",
+                    "Pre-Vaccination Health Exam",
+                    "Lifestyle Risk Assessment",
+                    "Annual Booster Guidance",
+                    "Post-Vaccination Monitoring"
+                  ]
+                },
+                "subImages": [
+                  {
+                    "src": "/images/services/service-vaccinations.jpg",
+                    "alt": "Gentle pet vaccination check"
+                  },
+                  {
+                    "src": "/images/services/detail-bathing.jpg",
+                    "alt": "Pet post-vaccination care"
+                  }
+                ],
+                "whyChoose": {
+                  "title": "Why Choose Our Vaccination Care?",
+                  "description": "We ensure safe, minimal-stress vaccination protocols with certified medical handling.",
+                  "reasons": [
+                    "Certified Veterinary Practitioners",
+                    "Temperature-Controlled Vaccine Storage",
+                    "Stress-Free Gentle Handling",
+                    "Comprehensive Wellness Screenings",
+                    "Automated Booster Alerts"
+                  ]
+                },
+                "slug": "vaccinations"
+              },
+              {
+                "id": "diagnostics",
+                "title": "Diagnostics",
+                "description": "Advanced laboratory testing, imaging, and screenings for accurate diagnoses.",
+                "image": "/images/services/service-diagnostics.jpg",
+                "icon": "paw",
+                "ctaText": "Read More",
+                "ctaHref": "/services/diagnostics",
+                "paragraphs": [
+                  "Accurate diagnosis is the cornerstone of effective veterinary treatment. Our modern in-house diagnostic laboratory provides rapid and precise results when time matters most.",
+                  "From digital radiography and ultrasonography to complete blood analysis and cytology, we pinpoint medical conditions early to begin treatment immediately."
+                ],
+                "whatsIncluded": {
+                  "title": "What's Included?",
+                  "items": [
+                    "Digital High-Resolution X-Rays",
+                    "Complete Blood Count (CBC)",
+                    "Biochemical Serum Profiles",
+                    "Abdominal Ultrasonography",
+                    "Urine & Fecal Analysis",
+                    "Electrocardiography (ECG)",
+                    "Cytology & Biopsy Screenings",
+                    "Same-Day Lab Reports"
+                  ]
+                },
+                "subImages": [
+                  {
+                    "src": "/images/services/service-diagnostics.jpg",
+                    "alt": "Modern diagnostic laboratory equipment"
+                  },
+                  {
+                    "src": "/images/services/detail-main-grooming.jpg",
+                    "alt": "Veterinary examination room"
+                  }
+                ],
+                "whyChoose": {
+                  "title": "Why Choose Our Diagnostics?",
+                  "description": "State-of-the-art diagnostic technology for swift, accurate medical evaluations.",
+                  "reasons": [
+                    "Rapid In-House Testing Facility",
+                    "Advanced Digital Imaging",
+                    "Experienced Veterinary Radiologists",
+                    "Detailed Diagnostic Reports",
+                    "Immediate Clinical Action Plans"
+                  ]
+                },
+                "slug": "diagnostics"
+              },
+              {
+                "id": "dental-care",
+                "title": "Dental Care",
+                "description": "Professional dental cleanings and oral health treatments for healthy teeth and gums.",
+                "image": "/images/services/service-dental.jpg",
+                "icon": "dental",
+                "ctaText": "Read More",
+                "ctaHref": "/services/dental-care",
+                "paragraphs": [
+                  "Dental hygiene is critical for your pet's comfort, nutrition, and longevity. Plaque buildup and periodontal diseases can lead to systemic infections if left untreated.",
+                  "We provide ultrasonic scaling, subgingival cleaning, teeth polishing, and gentle extractions under safe monitoring, keeping breath fresh and teeth strong."
+                ],
+                "whatsIncluded": {
+                  "title": "What's Included?",
+                  "items": [
+                    "Ultrasonic Dental Scaling",
+                    "Tooth Polishing & Fluoride",
+                    "Gingival Pocket Assessment",
+                    "Intraoral Digital Radiographs",
+                    "Tartar & Plaque Removal",
+                    "Safe Monitored Anesthesia",
+                    "Pain Relief Medication",
+                    "Home Dental Hygiene Guide"
+                  ]
+                },
+                "subImages": [
+                  {
+                    "src": "/images/services/service-dental.jpg",
+                    "alt": "Pet dental scaling and checkup"
+                  },
+                  {
+                    "src": "/images/services/detail-trimming.jpg",
+                    "alt": "Pet comfort care"
+                  }
+                ],
+                "whyChoose": {
+                  "title": "Why Choose Our Dental Care?",
+                  "description": "Dedicated dental suites equipped with ultrasonic instruments and vitals monitoring.",
+                  "reasons": [
+                    "Ultrasonic Scaling Technology",
+                    "Continuous Vitals & Anesthesia Monitoring",
+                    "Effective Bad Breath Prevention",
+                    "Gentle Oral Surgery Expertise",
+                    "Custom Home Dental Plans"
+                  ]
+                },
+                "slug": "dental-care"
+              },
+              {
+                "id": "surgery",
+                "title": "Surgery",
+                "description": "Safe and effective surgical procedures performed by experienced veterinary professionals.",
+                "image": "/images/services/service-surgery.jpg",
+                "icon": "cross",
+                "ctaText": "Read More",
+                "ctaHref": "/services/surgery",
+                "paragraphs": [
+                  "Our surgical suite is fully equipped to perform routine soft-tissue procedures as well as advanced orthopedic surgeries with exceptional patient safety standards.",
+                  "From pre-anesthetic testing to continuous intra-operative ECG and pulse oximetry, our surgical team prioritizes your companion's safety and swift recovery."
+                ],
+                "whatsIncluded": {
+                  "title": "What's Included?",
+                  "items": [
+                    "Spay & Neuter Procedures",
+                    "Soft-Tissue Surgical Repairs",
+                    "Continuous Vitals Monitoring",
+                    "Multimodal Pain Management",
+                    "Sterile Surgical Suite",
+                    "Post-Op Recovery Warming Suites",
+                    "Comprehensive Discharge Care",
+                    "Complimentary Suture Checkup"
+                  ]
+                },
+                "subImages": [
+                  {
+                    "src": "/images/services/service-surgery.jpg",
+                    "alt": "Sterile surgical environment"
+                  },
+                  {
+                    "src": "/images/services/detail-main-grooming.jpg",
+                    "alt": "Post-operative recovery monitoring"
+                  }
+                ],
+                "whyChoose": {
+                  "title": "Why Choose Our Surgical Team?",
+                  "description": "Rigorous safety standards and compassionate post-operative recovery care.",
+                  "reasons": [
+                    "Board-Certified Veterinary Surgeons",
+                    "Advanced Inhalation Anesthesia & Monitoring",
+                    "Compassionate Pain Management Protocols",
+                    "Dedicated Recovery Care Staff",
+                    "Clear Post-Operative Instructions"
+                  ]
+                },
+                "slug": "surgery"
+              },
+              {
+                "id": "pet-grooming",
+                "title": "Pet Grooming",
+                "description": "Nutritional guidance and diet recommendations tailored to your pet's needs.",
+                "image": "/images/services/service-grooming.jpg",
+                "icon": "scissors",
+                "ctaText": "Read More",
+                "ctaHref": "/services/pet-grooming",
+                "paragraphs": [
+                  "Our pet grooming services are designed to keep your furry friends clean, healthy, and looking their best. We provide gentle and professional grooming with a focus on hygiene, comfort, and overall well-being.",
+                  "Regular grooming not only enhances your pet's appearance but also helps prevent skin problems, reduces shedding, and allows early detection of any health issues. Our experienced groomers use safe, pet-friendly products and caring techniques to ensure a stress-free and enjoyable grooming experience for your pet."
+                ],
+                "whatsIncluded": {
+                  "title": "What's Included?",
+                  "items": [
+                    "Bath & Shampoo",
+                    "Teeth Cleaning",
+                    "Hair Trimming",
+                    "Brushing & De-shedding",
+                    "Nail Clipping",
+                    "Flea & Tick Care",
+                    "Ear Cleaning",
+                    "Full Grooming Package"
+                  ]
+                },
+                "subImages": [
+                  {
+                    "src": "/images/services/detail-bathing.jpg",
+                    "alt": "Dog enjoying shampoo bath"
+                  },
+                  {
+                    "src": "/images/services/detail-trimming.jpg",
+                    "alt": "Dog getting trimmed and brushed"
+                  }
+                ],
+                "whyChoose": {
+                  "title": "Why Choose Our Grooming Service?",
+                  "description": "We are committed to providing safe, gentle, and professional grooming services that your pet will love and you can trust.",
+                  "reasons": [
+                    "Experienced & Friendly Groomers",
+                    "Safe & Pet-Friendly Products",
+                    "Clean & Hygienic Environment",
+                    "Personalized Care for Every Pet",
+                    "Suitable for All Breeds & Sizes"
+                  ]
+                },
+                "slug": "pet-grooming"
+              }
+            ],
+            "sidebar": {
+              "title": "Our Services",
+              "services": [
+                {
+                  "id": "pet-grooming",
+                  "slug": "pet-grooming",
+                  "name": "Pet Grooming",
+                  "icon": "scissors"
+                },
+                {
+                  "id": "vaccinations",
+                  "slug": "vaccinations",
+                  "name": "Vaccinations",
+                  "icon": "vaccine"
+                },
+                {
+                  "id": "diagnostics",
+                  "slug": "diagnostics",
+                  "name": "Diagnostics",
+                  "icon": "paw"
+                },
+                {
+                  "id": "dental-care",
+                  "slug": "dental-care",
+                  "name": "Dental Care",
+                  "icon": "stethoscope"
+                },
+                {
+                  "id": "surgery",
+                  "slug": "surgery",
+                  "name": "Veterinary Surgery",
+                  "icon": "dog"
+                }
+              ]
+            },
+            "helpCard": {
+              "title": "Need Help?",
+              "subtitle": "We are here to assist you with the best care for your pet.",
+              "callText": "Call Us Anytime",
+              "phone": "+1 (123) 456-7890",
+              "image": "/images/services/help-dog.jpg"
+            }
+          }
+        }
+      },
+      "testimonials": {
+        "variants": {
+          "PetcareTestimonials1": {
+            "tag": "TESTIMONIALS",
+            "headline": {
+              "main": "What Pet Parents Say",
+              "highlight": "About Us"
+            },
+            "items": [
+              {
+                "id": "testimonial-1",
+                "quote": "I was amazed by the transformation in my cat’s behavior after the training with PetCare. The positive reinforcement techniques really work wonders!",
+                "author": "David Kumar",
+                "role": "Cat Parent"
+              },
+              {
+                "id": "testimonial-2",
+                "quote": "The team at PetCare has been a game-changer for me and my dog. The grooming sessions are always gentle and professional. Highly recommend their services!",
+                "author": "Sarah Mehta",
+                "role": "Dog Parent"
+              },
+              {
+                "id": "testimonial-3",
+                "quote": "Excellent veterinary care and very friendly staff. They explained everything clearly and made my dog’s treatment stress-free.",
+                "author": "Michael Chang",
+                "role": "Dog Parent"
+              },
+              {
+                "id": "testimonial-4",
+                "quote": "The team at PetCare has been wonderful with our new puppy. Their patience and expert advice made training a joyful experience!",
+                "author": "Neha Kapoor",
+                "role": "Puppy Parent"
+              }
+            ]
+          }
+        }
+      },
+      "stats": {
+        "variants": {
+          "PetcareStats1": {
+            "items": [
+              {
+                "id": "stat-clients",
+                "value": "1,500+",
+                "label": "HAPPY CLIENTS",
+                "icon": "team"
+              },
+              {
+                "id": "stat-professionals",
+                "value": "14+",
+                "label": "PROFESSIONALS",
+                "icon": "trainer"
+              },
+              {
+                "id": "stat-adopted",
+                "value": "900+",
+                "label": "ADOPTED PETS",
+                "icon": "house"
+              },
+              {
+                "id": "stat-awards",
+                "value": "12+",
+                "label": "AWARDS",
+                "icon": "ribbon"
+              }
+            ]
+          }
+        }
+      },
+      "team": {
+        "variants": {
+          "PetcareTeam1": {
+            "tag": "OUR TEAM",
+            "headline": {
+              "main": "Meet Our",
+              "highlight": "Expert Team"
+            },
+            "subheadline": "Our passionate and experienced veterinary professionals are dedicated to providing the best care for your furry friends.",
+            "members": [
+              {
+                "id": "member-1",
+                "name": "Dr. Olivia Carter",
+                "role": "CHIEF VETERINARIAN",
+                "image": "/images/team/team-olivia.png"
+              },
+              {
+                "id": "member-2",
+                "name": "Dr. Sophia Bennett",
+                "role": "EMERGENCY CARE VETERINARIAN",
+                "image": "/images/team/team-sophia.png"
+              },
+              {
+                "id": "member-3",
+                "name": "Dr. Ethan Walker",
+                "role": "SENIOR VETERINARY SURGEON",
+                "image": "/images/team/team-ethan.png"
+              }
+            ]
+          }
+        }
+      },
+      "footer": {
+        "variants": {
+          "PetcareFooter1": {
+            "brand": {
+              "name": "PetCare",
+              "logo": "/logo/logo-white.webp",
+              "alt": "PetCare - Happy Pets, Happier Lives",
+              "href": "/"
+            },
+            "description": "We are dedicated to providing compassionate care, expert veterinary services, and a safe environment for your beloved pets.",
+            "socialLinks": [
+              {
+                "platform": "facebook",
+                "href": "https://facebook.com",
+                "label": "Facebook"
+              },
+              {
+                "platform": "instagram",
+                "href": "https://instagram.com",
+                "label": "Instagram"
+              },
+              {
+                "platform": "youtube",
+                "href": "https://youtube.com",
+                "label": "YouTube"
+              },
+              {
+                "platform": "linkedin",
+                "href": "https://linkedin.com",
+                "label": "LinkedIn"
+              }
+            ],
+            "location": {
+              "title": "Location",
+              "addressLines": [
+                "123 Pet Care Avenue,",
+                "Los Angeles, CA 90001",
+                "United States"
+              ]
+            },
+            "contact": {
+              "phone": {
+                "title": "Call Us",
+                "numbers": [
+                  {
+                    "display": "+1 000000000",
+                    "href": "tel:+1 000000000"
+                  }
+                ]
+              },
+              "email": {
+                "title": "Email Us",
+                "addresses": [
+                  {
+                    "display": "info@xyz.com",
+                    "href": "mailto:info@xyz.com"
+                  }
+                ]
+              }
+            },
+            "copyright": "© 2026 PetCare. All Rights Reserved. Powered by Lestow",
+            "quickLinks": {
+              "title": "Quick Links",
+              "links": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "About Us",
+                  "href": "/about"
+                },
+                {
+                  "label": "Our Services",
+                  "href": "/services"
+                },
+                {
+                  "label": "Book Appointment",
+                  "href": "/appointment"
+                },
+                {
+                  "label": "Pricing & Plans",
+                  "href": "/pricing"
+                },
+                {
+                  "label": "FAQs",
+                  "href": "/faqs"
+                }
+              ]
+            },
+            "getInTouch": {
+              "title": "Get In Touch",
+              "location": {
+                "title": "Location",
+                "addressLines": [
+                  "123 Pet Care Avenue,",
+                  "Los Angeles, CA 90001",
+                  "United States"
+                ]
+              },
+              "contact": {
+                "phone": {
+                  "title": "Call Us",
+                  "numbers": [
+                    {
+                      "display": "+1 000000000",
+                      "href": "tel:+1 000000000"
+                    }
+                  ]
+                },
+                "email": {
+                  "title": "Email Us",
+                  "addresses": [
+                    {
+                      "display": "info@xyz.com",
+                      "href": "mailto:info@xyz.com"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "whyChooseUs": {
+        "variants": {
+          "PetcareWhyChooseUs1": {
+            "tag": "Why Choose PetCare",
+            "headline": {
+              "line1": "We Are Providing",
+              "highlight": "Best Pet Care",
+              "line2": "Services"
+            },
+            "video": {
+              "thumbnail": "/images/why-choose-us-video.png",
+              "alt": "Golden Retriever Dog and Fluffy Cat",
+              "youtubeUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+            },
+            "mission": {
+              "title": "Our Mission",
+              "description": "To provide compassionate, high-quality pet care that ensures happier, healthier lives for pets and peace of mind for their families."
+            },
+            "vision": {
+              "title": "Our Vision",
+              "description": "To be a trusted and leading pet care service provider, creating a healthier, safer, and more loving world for pets everywhere."
+            },
+            "card": {
+              "title": {
+                "line1": "What Makes PetCare",
+                "line2": "Your Best Choice?"
+              },
+              "description": "We are committed to delivering professional, loving, and reliable care for your pets with a personalized approach.",
+              "reasons": [
+                "Experienced & Caring Team",
+                "Personalized Pet Care Plans",
+                "Clean & Safe Environment",
+                "Modern Facilities",
+                "Affordable & Transparent Pricing",
+                "Trusted by Pet Parents",
+                "Focus on Pet Health & Happiness"
+              ]
+            }
+          }
+        }
+      },
+      "gallery": {
+        "variants": {
+          "PetcareGallery1": {
+            "tag": "GALLERY",
+            "headline": {
+              "main": "Our Pet",
+              "highlight": "Gallery"
+            },
+            "description": "Take a look at the happy moments of our furry friends and see the care, love, and attention we provide every day.",
+            "items": [
+              {
+                "id": 1,
+                "image": "/images/gallery/gallery-1.jpg",
+                "alt": "Dog getting a warm soapy bath"
+              },
+              {
+                "id": 2,
+                "image": "/images/gallery/gallery-2.jpg",
+                "alt": "Fluffy cat being groomed with brush"
+              },
+              {
+                "id": 3,
+                "image": "/images/gallery/gallery-3.jpg",
+                "alt": "Cute puppy getting professional haircut"
+              },
+              {
+                "id": 4,
+                "image": "/images/gallery/gallery-4.jpg",
+                "alt": "Golden Retriever health checkup by veterinarian"
+              },
+              {
+                "id": 5,
+                "image": "/images/gallery/gallery-5.jpg",
+                "alt": "Playful kitten smiling while being petted"
+              },
+              {
+                "id": 6,
+                "image": "/images/gallery/gallery-6.jpg",
+                "alt": "Happy border collie smiling on lush green grass"
+              },
+              {
+                "id": 7,
+                "image": "/images/gallery/gallery-7.jpg",
+                "alt": "Veterinary nurse hugging gentle golden retriever"
+              },
+              {
+                "id": 8,
+                "image": "/images/gallery/gallery-8.jpg",
+                "alt": "Cute curious kitten resting indoors"
+              },
+              {
+                "id": 9,
+                "image": "/images/gallery/gallery-9.jpg",
+                "alt": "Small puppy playing with colorful toy ball"
+              },
+              {
+                "id": 10,
+                "image": "/images/gallery/gallery-10.jpg",
+                "alt": "Adorable grey cat looking attentively"
+              },
+              {
+                "id": 11,
+                "image": "/images/gallery/gallery-11.jpg",
+                "alt": "Golden puppy enjoying grooming bath"
+              },
+              {
+                "id": 12,
+                "image": "/images/gallery/gallery-12.jpg",
+                "alt": "Smiling pet caregiver holding fluffy kitten"
+              }
+            ]
+          }
+        }
+      },
+      "faqs": {
+        "variants": {
+          "PetcareFaqs1": {
+            "badge": {
+              "icon": "bone",
+              "text": "Popular Questions"
+            },
+            "headline": {
+              "line1": "FAQs: Get the",
+              "line2": "Answers You",
+              "line3": "Need to Know"
+            },
+            "cta": {
+              "label": "Get in Touch",
+              "href": "/contact"
+            },
+            "items": [
+              {
+                "id": "faq-1",
+                "question": "Which vaccinations does my pet need?",
+                "answer": "Essential core vaccinations include Rabies, DHPP for dogs (Distemper, Hepatitis, Parvovirus, Parainfluenza), and FVRCP for cats. Additional non-core vaccines depend on your pet's age, outdoor exposure, and regional disease risks."
+              },
+              {
+                "id": "faq-2",
+                "question": "What should I bring to my pet's first appointment?",
+                "answer": "Please bring your pet's prior medical and vaccination history, a list of current medications or supplements, adoption or breeder paperwork, and a favorite blanket or toy to keep them calm and comfortable."
+              },
+              {
+                "id": "faq-3",
+                "question": "Do you offer emergency veterinary services?",
+                "answer": "Yes, we provide emergency triage and urgent care services during our regular clinical hours. For critical after-hours emergencies, we coordinate directly with accredited 24/7 emergency animal trauma centers."
+              },
+              {
+                "id": "faq-4",
+                "question": "How often should my pet have a dental checkup?",
+                "answer": "We recommend an oral examination at least once a year during regular wellness visits. Pets showing early signs of tartar buildup or breath odor may benefit from cleanings every 6 to 12 months."
+              },
+              {
+                "id": "faq-5",
+                "question": "When should I spay or neuter my pet?",
+                "answer": "Most puppies and kittens are typically spayed or neutered between 5 to 9 months of age. Larger dog breeds may benefit from waiting until full growth plate closure at 12 to 18 months."
+              },
+              {
+                "id": "faq-6",
+                "question": "Do you treat both dogs and cats?",
+                "answer": "Absolutely! Our facility is equipped with dedicated dog-friendly and low-stress cat examination rooms to ensure comfortable, individualized care for both species."
+              },
+              {
+                "id": "faq-7",
+                "question": "What diagnostic services do you offer?",
+                "answer": "Our diagnostic suite includes high-resolution digital X-rays, ultrasound imaging, in-house hematology and biochemical blood testing, urinalysis, and microscopic cytology for rapid results."
+              },
+              {
+                "id": "faq-8",
+                "question": "How can I schedule an appointment?",
+                "answer": "You can easily book online via our appointment booking portal, give our reception desk a call, or send us a WhatsApp message to select your preferred date and veterinarian."
+              },
+              {
+                "id": "faq-9",
+                "question": "How do I know if my pet is overweight?",
+                "answer": "You should easily be able to feel your pet's ribs without pressing hard, and observe a noticeable waistline tuck behind their ribs when viewed from above. Our vets can provide a Body Condition Score (BCS)."
+              },
+              {
+                "id": "faq-10",
+                "question": "Why is dental care important for pets?",
+                "answer": "Untreated periodontal disease causes oral pain, tooth loss, and allows harmful oral bacteria to enter the bloodstream, potentially affecting your pet's heart, kidneys, and liver."
+              }
+            ]
+          }
+        }
+      },
+      "pricing": {
+        "variants": {
+          "PetcarePricing1": {
+            "tag": "PRICING & PACKAGES",
+            "headline": {
+              "main": "Affordable Care for",
+              "highlight": "Every Pet"
+            },
+            "description": "Choose from our flexible pricing plans designed to keep your furry friends healthy, happy, and well cared for.",
+            "plans": [
+              {
+                "id": "pet-grooming",
+                "title": "Pet Grooming",
+                "subtitle": "Keep your pet clean, fresh, and looking their best.",
+                "icon": "grooming",
+                "startingFromText": "Starting From",
+                "price": "₹699",
+                "theme": {
+                  "color": "#059669",
+                  "bgGradient": "from-[#ecfdf5] to-[#d1fae5]/50",
+                  "cardBg": "bg-[#f0fdf4]",
+                  "border": "border-[#bbf7d0]",
+                  "blobBg": "bg-[#dcfce7]",
+                  "iconColor": "text-[#059669]",
+                  "iconBg": "bg-white",
+                  "checkColor": "text-[#059669]",
+                  "priceColor": "text-[#059669]",
+                  "pawColor": "text-[#86efac]/40"
+                },
+                "features": [
+                  "Bath & Shampoo",
+                  "Nail Trimming",
+                  "Ear Cleaning",
+                  "Coat Brushing",
+                  "De-shedding Treatment"
+                ]
+              },
+              {
+                "id": "veterinary-care",
+                "title": "Veterinary Care",
+                "subtitle": "Expert medical care for a healthier tomorrow.",
+                "icon": "veterinary",
+                "startingFromText": "Starting From",
+                "price": "₹499",
+                "theme": {
+                  "color": "#2563eb",
+                  "bgGradient": "from-[#eff6ff] to-[#dbeafe]/50",
+                  "cardBg": "bg-[#f0f7ff]",
+                  "border": "border-[#bfdbfe]",
+                  "blobBg": "bg-[#dbeafe]",
+                  "iconColor": "text-[#2563eb]",
+                  "iconBg": "bg-white",
+                  "checkColor": "text-[#2563eb]",
+                  "priceColor": "text-[#2563eb]",
+                  "pawColor": "text-[#93c5fd]/40"
+                },
+                "features": [
+                  "General Health Checkup",
+                  "Vaccination",
+                  "Deworming",
+                  "Disease Diagnosis",
+                  "Health Consultation"
+                ]
+              },
+              {
+                "id": "dog-training",
+                "title": "Dog Training",
+                "subtitle": "Build good behavior and a stronger bond.",
+                "icon": "training",
+                "startingFromText": "Starting From",
+                "price": "₹1,499",
+                "theme": {
+                  "color": "#d97706",
+                  "bgGradient": "from-[#fffbeb] to-[#fef3c7]/50",
+                  "cardBg": "bg-[#fffdf5]",
+                  "border": "border-[#fde68a]",
+                  "blobBg": "bg-[#fef3c7]",
+                  "iconColor": "text-[#d97706]",
+                  "iconBg": "bg-white",
+                  "checkColor": "text-[#d97706]",
+                  "priceColor": "text-[#d97706]",
+                  "pawColor": "text-[#fcd34d]/40"
+                },
+                "features": [
+                  "Basic Obedience",
+                  "Socialization Training",
+                  "Behavior Correction",
+                  "Leash Training",
+                  "Personalized Training Plan"
+                ]
+              },
+              {
+                "id": "pet-sitting",
+                "title": "Pet Sitting",
+                "subtitle": "Reliable care for your pet, even when you're away.",
+                "icon": "sitting",
+                "startingFromText": "Starting From",
+                "price": "₹799",
+                "theme": {
+                  "color": "#e11d48",
+                  "bgGradient": "from-[#fff1f2] to-[#ffe4e6]/50",
+                  "cardBg": "bg-[#fff5f6]",
+                  "border": "border-[#fecdd3]",
+                  "blobBg": "bg-[#ffe4e6]",
+                  "iconColor": "text-[#e11d48]",
+                  "iconBg": "bg-white",
+                  "checkColor": "text-[#e11d48]",
+                  "priceColor": "text-[#e11d48]",
+                  "pawColor": "text-[#fda4af]/40"
+                },
+                "features": [
+                  "Feeding & Fresh Water",
+                  "Playtime & Exercise",
+                  "Litter Box Cleaning",
+                  "Daily Updates",
+                  "In-Home or On-Call Sitting"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "contact": {
+        "variants": {
+          "PetcareContact1": {
+            "tag": "CONTACT US",
+            "headline": {
+              "main": "Get In Touch",
+              "highlight": "With Us"
+            },
+            "description": "We're here to answer your questions, help with appointments, and provide the best care for your furry friends.",
+            "infoCard": {
+              "title": "Contact Information",
+              "description": "We'd love to hear from you! Reach out to us for appointments, enquiries, or any questions about our pet care services.",
+              "image": "/images/contact-pets.png",
+              "details": {
+                "location": {
+                  "title": "Location",
+                  "address": "123 Pet Care Avenue, Green Park, New Delhi 110016"
+                },
+                "phone": {
+                  "title": "Call Us",
+                  "number": "123457890"
+                },
+                "email": {
+                  "title": "Email Us",
+                  "address": "info@pawsphere.com"
+                }
+              },
+              "socials": [
+                {
+                  "id": "facebook",
+                  "name": "Facebook",
+                  "href": "#"
+                },
+                {
+                  "id": "instagram",
+                  "name": "Instagram",
+                  "href": "#"
+                },
+                {
+                  "id": "youtube",
+                  "name": "YouTube",
+                  "href": "#"
+                },
+                {
+                  "id": "linkedin",
+                  "name": "LinkedIn",
+                  "href": "#"
+                }
+              ],
+              "followUsText": "Follow Us"
+            },
+            "form": {
+              "title": {
+                "main": "Send Us",
+                "highlight": "A Message"
+              },
+              "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+              "submitText": "Send Message",
+              "services": [
+                "Pet Grooming",
+                "Veterinary Care",
+                "Dog Training",
+                "Pet Sitting",
+                "General Consultation"
+              ],
+              "labels": {
+                "name": "Full Name",
+                "namePlaceholder": "Your name",
+                "email": "Email Address",
+                "emailPlaceholder": "Your email address",
+                "phone": "Phone Number",
+                "phonePlaceholder": "Your phone number",
+                "service": "Interested Service",
+                "serviceDefaultOption": "Select a service",
+                "message": "Your Message",
+                "messagePlaceholder": "Write your message"
+              },
+              "successMessage": "Thank you! Your message has been sent successfully. We will get back to you shortly."
+            },
+            "map": {
+              "locationName": "123 Pet Care Avenue",
+              "address": "Green Park, New Delhi 110016, India",
+              "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14018.665793081014!2d77.195029!3d28.556272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce26e38b3234d%3A0x6e8f47b2c58e7264!2sGreen%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+              "openInMapsUrl": "https://maps.google.com/?q=Green+Park+New+Delhi",
+              "openInMapsText": "Open in Maps"
+            }
+          }
+        }
+      },
+      "appointment": {
+        "variants": {
+          "PetcareAppointment1": {
+            "header": {
+              "icon": "calendar",
+              "title": {
+                "main": "Book an",
+                "highlight": "Appointment"
+              },
+              "subtitle": "Fill in the details below and we'll confirm your appointment at the earliest."
+            },
+            "image": "/images/appointment-pets.png",
+            "form": {
+              "labels": {
+                "name": "Your full name *",
+                "email": "Your email address *",
+                "phone": "Your phone number *",
+                "service": "Select service *",
+                "date": "Preferred date *",
+                "time": "Preferred time *",
+                "petType": "Pet type *",
+                "message": "Additional message (optional)"
+              },
+              "services": [
+                "Pet Grooming",
+                "Veterinary Care",
+                "Dog Training",
+                "Pet Sitting",
+                "Dental Cleaning",
+                "Vaccination"
+              ],
+              "times": [
+                "09:00 AM - 11:00 AM",
+                "11:00 AM - 01:00 PM",
+                "02:00 PM - 04:00 PM",
+                "04:00 PM - 06:00 PM"
+              ],
+              "petTypes": [
+                "Dog",
+                "Cat",
+                "Puppy / Kitten",
+                "Rabbit",
+                "Bird",
+                "Other"
+              ],
+              "submitText": "Book Appointment",
+              "successMessage": "Thank you! Your appointment request has been submitted. Our team will contact you shortly to confirm."
+            }
+          }
+        }
+      },
+      "breadcrumb": {
+        "variants": {
+          "PetcareBreadcrumb1": {
+            "defaultBgImage": "/images/breadcrumb-bg.png",
+            "parentLabel": "Home",
+            "parentPath": "/",
+            "pages": {
+              "about": {
+                "title": "About Us",
+                "subTitle": "About Us",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "services": {
+                "title": "Our Services",
+                "subTitle": "Our Services",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "gallery": {
+                "title": "Gallery",
+                "subTitle": "Gallery",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "team": {
+                "title": "Our Team",
+                "subTitle": "Our Team",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "faqs": {
+                "title": "FAQs",
+                "subTitle": "FAQs",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "pricing": {
+                "title": "Pricing & Packages",
+                "subTitle": "Pricing",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "contact": {
+                "title": "Contact Us",
+                "subTitle": "Contact Us",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              },
+              "appointment": {
+                "title": "Book an Appointment",
+                "subTitle": "Appointment",
+                "parentLabel": "Home",
+                "parentPath": "/"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
