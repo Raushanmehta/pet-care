@@ -85,7 +85,7 @@ export default function Footer({ data = site.footer }: FooterProps) {
                   width={200}
                   height={52}
                   priority
-                  className="h-10 sm:h-13 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                  className="h-10 sm:h-15 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
 

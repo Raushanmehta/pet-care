@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { FaPaw } from "react-icons/fa";
-import { site, GalleryData, GalleryItemData } from "@/data";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { site, GalleryData } from "@/data";
 import GalleryCard from "@/components/cards/GalleryCard";
 
 interface GallerySectionProps {
@@ -15,12 +16,46 @@ export default function GallerySection({
   data = site.gallery,
   className = "",
 }: GallerySectionProps) {
-  const [selectedImage, setSelectedImage] = useState<GalleryItemData | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const totalImages = data.items.length;
+
+  const handlePrev = useCallback(() => {
+    setSelectedIndex((prev) =>
+      prev === null ? null : (prev - 1 + totalImages) % totalImages
+    );
+  }, [totalImages]);
+
+  const handleNext = useCallback(() => {
+    setSelectedIndex((prev) =>
+      prev === null ? null : (prev + 1) % totalImages
+    );
+  }, [totalImages]);
+
+  const handleClose = useCallback(() => {
+    setSelectedIndex(null);
+  }, []);
+
+  // Keyboard navigation (Arrow keys + Escape)
+  useEffect(() => {
+    if (selectedIndex === null) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") handlePrev();
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "Escape") handleClose();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex, handlePrev, handleNext, handleClose]);
+
+  const activeImage = selectedIndex !== null ? data.items[selectedIndex] : null;
 
   return (
     <section
       aria-label="Pet Gallery"
-      className={`relative w-full overflow-hidden bg-white text-[#111827]  py-10 lg:py-16  select-none ${className}`}
+      className={`relative w-full overflow-hidden bg-white text-[#111827] py-10 lg:py-16 select-none ${className}`}
     >
       {/* Decorative Background */}
       <div className="absolute inset-0 pointer-events-none opacity-10 overflow-hidden">
@@ -74,44 +109,82 @@ export default function GallerySection({
 
         {/* 4x4 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
-          {data.items.map((item) => (
+          {data.items.map((item, index) => (
             <GalleryCard
               key={item.id}
               item={item}
-              onClick={() => setSelectedImage(item)}
+              onClick={() => setSelectedIndex(index)}
             />
           ))}
         </div>
       </div>
 
-      {/* LIGHTBOX MODAL PREVIEW */}
-      {selectedImage && (
+      {/* LIGHTBOX SLIDER MODAL */}
+      {activeImage && selectedIndex !== null && (
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85  animate-fade-in"
-          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-sm animate-fade-in"
+          onClick={handleClose}
         >
+          {/* Close Button */}
+          <button
+            type="button"
+            onClick={handleClose}
+            aria-label="Close modal"
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 z-50 w-11 h-11 rounded-full bg-white/10 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all cursor-pointer shadow-lg"
+          >
+            <X size={24} />
+          </button>
+
+          {/* Previous Slide Button */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handlePrev();
+            }}
+            aria-label="Previous image"
+            className="absolute left-3 sm:left-6 z-50 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/50 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/20 shadow-xl"
+          >
+            <ChevronLeft size={28} />
+          </button>
+
+          {/* Next Slide Button */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleNext();
+            }}
+            aria-label="Next image"
+            className="absolute right-3 sm:right-6 z-50 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/50 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/20 shadow-xl"
+          >
+            <ChevronRight size={28} />
+          </button>
+
+          {/* Image & Caption Container */}
           <div
-            className="relative max-w-3xl w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black shadow-2xl"
+            className="relative max-w-4xl w-full h-[65vh] sm:h-[75vh] md:h-[80vh] flex flex-col items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
-              src={selectedImage.image}
-              alt={selectedImage.alt}
-              fill
-              className="object-contain"
-            />
-            <button
-              type="button"
-              onClick={() => setSelectedImage(null)}
-              aria-label="Close modal"
-              className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 hover:bg-white text-white hover:text-black flex items-center justify-center transition-colors cursor-pointer text-xl font-bold"
-            >
-              ✕
-            </button>
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white text-center font-poppins text-sm sm:text-base">
-              {selectedImage.alt}
+            <div className="relative w-full h-full rounded-2xl overflow-hidden bg-black/40 shadow-2xl">
+              <Image
+                key={activeImage.id}
+                src={activeImage.image}
+                alt={activeImage.alt}
+                fill
+                priority
+                className="object-contain transition-all duration-300"
+              />
+            </div>
+
+            {/* Bottom Caption & Counter Indicator */}
+            <div className="mt-4 flex items-center justify-between w-full px-2 text-white/90 text-sm sm:text-base font-poppins">
+              <span className="font-medium truncate max-w-[70%]">{activeImage.alt}</span>
+              <span className="text-white/60 text-xs sm:text-sm bg-white/10 px-3 py-1 rounded-full">
+                {selectedIndex + 1} / {totalImages}
+              </span>
             </div>
           </div>
         </div>

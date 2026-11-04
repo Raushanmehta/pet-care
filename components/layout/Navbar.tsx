@@ -36,13 +36,11 @@ function NavbarContent({ data = site.navbar }: NavbarProps) {
       {/* Outer Pill */}
       <nav
         aria-label="Main Navigation"
-        className={`pointer-events-auto mx-auto w-full max-w-[1320px] bg-white transition-[background-color,box-shadow,border-color] duration-200 ${
-          mobileMenuOpen ? "rounded-[24px]" : "rounded-full"
-        } ${
-          isScrolled
+        className={`pointer-events-auto mx-auto w-full max-w-[1320px] bg-white transition-[background-color,box-shadow,border-color] duration-200 ${mobileMenuOpen ? "rounded-[24px]" : "rounded-full"
+          } ${isScrolled
             ? "shadow-[0_16px_40px_rgba(34,92,192,0.18)] border border-slate-100/90 py-2 sm:py-2.5 px-4"
             : "shadow-[0_8px_32px_rgba(20,50,110,0.12)] border border-white/60 py-2 sm:py-2.5 px-4"
-        }`}
+          }`}
       >
         <div className="flex items-center justify-between gap-3 sm:gap-4">
           {/* LEFT: Brand Logo */}
@@ -56,7 +54,7 @@ function NavbarContent({ data = site.navbar }: NavbarProps) {
               width={200}
               height={52}
               priority
-              className="h-9 sm:h-11 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-9 sm:h-11 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 

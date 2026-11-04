@@ -108,7 +108,7 @@ export default function HeroSection({ data = site.hero }: HeroSectionProps) {
             </h1>
 
             {/* Subheadline */}
-            <div className="w-full flex justify-end pr-0 sm:pr-8 md:pr-12 lg:pr-16 mb-6 sm:mb-8 md:mb-20">
+            <div className="hidden sm:flex w-full justify-end pr-0 sm:pr-8 md:pr-12 lg:pr-16 mb-6 sm:mb-8 md:mb-20">
               <p className="font-poppins text-xs sm:text-[13px] md:text-[13.5px] text-white/95 leading-relaxed max-w-[340px] text-left">
                 {data.subheadline}
               </p>
