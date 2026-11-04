@@ -31,7 +31,7 @@ export default function Breadcrumb({
   const resolvedSubTitle = subTitle || pageConfig?.subTitle || resolvedTitle;
   const resolvedParentPath = parentPath || pageConfig?.parentPath || breadcrumbConfig?.parentPath || "/";
   const resolvedParentLabel = parentLabel || pageConfig?.parentLabel || breadcrumbConfig?.parentLabel || "Home";
-  const resolvedBgImage = bgImage || pageConfig?.bgImage || breadcrumbConfig?.defaultBgImage || "/images/breadcrumb-bg.png";
+  const resolvedBgImage = bgImage || pageConfig?.bgImage || breadcrumbConfig?.defaultBgImage || "/images/breadcrumb-bg.webp";
 
   return (
     <section

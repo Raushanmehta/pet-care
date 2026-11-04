@@ -152,7 +152,7 @@
           "PetcareNavbar1": {
             "brand": {
               "name": "PetCare",
-              "logo": "/logo/logo.webp",
+              "logo": "/logo/logo-b.webp",
               "alt": "PetCare - Happy Pets, Happier Lives",
               "href": "/"
             },
@@ -212,7 +212,7 @@
             ],
             "cta": {
               "label": "Book Appointment",
-              "href": "/contact"
+              "href": "/appointment"
             }
           }
         }
@@ -240,7 +240,7 @@
               }
             ],
             "image": {
-              "src": "/images/hero-puppy.png",
+              "src": "/images/hero-puppy.webp",
               "alt": "Adorable golden retriever puppy sitting attentively"
             }
           }
@@ -276,11 +276,11 @@
             ],
             "images": {
               "teamPet": {
-                "src": "/images/about-team-pet.png",
+                "src": "/images/about-team-pet.webp",
                 "alt": "Happy couple sitting outdoors with their golden retriever"
               },
               "dog": {
-                "src": "/images/about-dog.png",
+                "src": "/images/about-dog.webp",
                 "alt": "Playful and happy Jack Russell dog smiling outdoors"
               }
             }
@@ -298,7 +298,7 @@
                 "id": "vaccinations",
                 "title": "Vaccinations",
                 "description": "Essential vaccines to protect pets from common and preventable diseases.",
-                "image": "/images/services/service-vaccinations.jpg",
+                "image": "/images/services/service-vaccinations.webp",
                 "icon": "vaccine",
                 "ctaText": "Read More",
                 "ctaHref": "/services/vaccinations",
@@ -321,11 +321,11 @@
                 },
                 "subImages": [
                   {
-                    "src": "/images/services/service-vaccinations.jpg",
+                    "src": "/images/services/service-vaccinations.webp",
                     "alt": "Gentle pet vaccination check"
                   },
                   {
-                    "src": "/images/services/detail-bathing.jpg",
+                    "src": "/images/services/detail-bathing.webp",
                     "alt": "Pet post-vaccination care"
                   }
                 ],
@@ -346,7 +346,7 @@
                 "id": "diagnostics",
                 "title": "Diagnostics",
                 "description": "Advanced laboratory testing, imaging, and screenings for accurate diagnoses.",
-                "image": "/images/services/service-diagnostics.jpg",
+                "image": "/images/services/service-diagnostics.webp",
                 "icon": "paw",
                 "ctaText": "Read More",
                 "ctaHref": "/services/diagnostics",
@@ -369,11 +369,11 @@
                 },
                 "subImages": [
                   {
-                    "src": "/images/services/service-diagnostics.jpg",
+                    "src": "/images/services/service-diagnostics.webp",
                     "alt": "Modern diagnostic laboratory equipment"
                   },
                   {
-                    "src": "/images/services/detail-main-grooming.jpg",
+                    "src": "/images/services/detail-main-grooming.webp",
                     "alt": "Veterinary examination room"
                   }
                 ],
@@ -394,7 +394,7 @@
                 "id": "dental-care",
                 "title": "Dental Care",
                 "description": "Professional dental cleanings and oral health treatments for healthy teeth and gums.",
-                "image": "/images/services/service-dental.jpg",
+                "image": "/images/services/service-dental.webp",
                 "icon": "dental",
                 "ctaText": "Read More",
                 "ctaHref": "/services/dental-care",
@@ -417,11 +417,11 @@
                 },
                 "subImages": [
                   {
-                    "src": "/images/services/service-dental.jpg",
+                    "src": "/images/services/service-dental.webp",
                     "alt": "Pet dental scaling and checkup"
                   },
                   {
-                    "src": "/images/services/detail-trimming.jpg",
+                    "src": "/images/services/detail-trimming.webp",
                     "alt": "Pet comfort care"
                   }
                 ],
@@ -442,7 +442,7 @@
                 "id": "surgery",
                 "title": "Surgery",
                 "description": "Safe and effective surgical procedures performed by experienced veterinary professionals.",
-                "image": "/images/services/service-surgery.jpg",
+                "image": "/images/services/service-surgery.webp",
                 "icon": "cross",
                 "ctaText": "Read More",
                 "ctaHref": "/services/surgery",
@@ -465,11 +465,11 @@
                 },
                 "subImages": [
                   {
-                    "src": "/images/services/service-surgery.jpg",
+                    "src": "/images/services/service-surgery.webp",
                     "alt": "Sterile surgical environment"
                   },
                   {
-                    "src": "/images/services/detail-main-grooming.jpg",
+                    "src": "/images/services/detail-main-grooming.webp",
                     "alt": "Post-operative recovery monitoring"
                   }
                 ],
@@ -490,7 +490,7 @@
                 "id": "pet-grooming",
                 "title": "Pet Grooming",
                 "description": "Nutritional guidance and diet recommendations tailored to your pet's needs.",
-                "image": "/images/services/service-grooming.jpg",
+                "image": "/images/services/service-grooming.webp",
                 "icon": "scissors",
                 "ctaText": "Read More",
                 "ctaHref": "/services/pet-grooming",
@@ -513,11 +513,11 @@
                 },
                 "subImages": [
                   {
-                    "src": "/images/services/detail-bathing.jpg",
+                    "src": "/images/services/detail-bathing.webp",
                     "alt": "Dog enjoying shampoo bath"
                   },
                   {
-                    "src": "/images/services/detail-trimming.jpg",
+                    "src": "/images/services/detail-trimming.webp",
                     "alt": "Dog getting trimmed and brushed"
                   }
                 ],
@@ -575,7 +575,7 @@
               "subtitle": "We are here to assist you with the best care for your pet.",
               "callText": "Call Us Anytime",
               "phone": "+1 (123) 456-7890",
-              "image": "/images/services/help-dog.jpg"
+              "image": "/images/services/help-dog.webp"
             }
           }
         }
@@ -663,19 +663,19 @@
                 "id": "member-1",
                 "name": "Dr. Olivia Carter",
                 "role": "CHIEF VETERINARIAN",
-                "image": "/images/team/team-olivia.png"
+                "image": "/images/team/team-olivia.webp"
               },
               {
                 "id": "member-2",
                 "name": "Dr. Sophia Bennett",
                 "role": "EMERGENCY CARE VETERINARIAN",
-                "image": "/images/team/team-sophia.png"
+                "image": "/images/team/team-sophia.webp"
               },
               {
                 "id": "member-3",
                 "name": "Dr. Ethan Walker",
                 "role": "SENIOR VETERINARY SURGEON",
-                "image": "/images/team/team-ethan.png"
+                "image": "/images/team/team-ethan.webp"
               }
             ]
           }
@@ -686,7 +686,7 @@
           "PetcareFooter1": {
             "brand": {
               "name": "PetCare",
-              "logo": "/logo/logo-white.webp",
+              "logo": "/logo/logo-w.webp",
               "alt": "PetCare - Happy Pets, Happier Lives",
               "href": "/"
             },
@@ -815,7 +815,7 @@
               "line2": "Services"
             },
             "video": {
-              "thumbnail": "/images/why-choose-us-video.png",
+              "thumbnail": "/images/why-choose-us-video.webp",
               "alt": "Golden Retriever Dog and Fluffy Cat",
               "youtubeUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
             },
@@ -858,62 +858,62 @@
             "items": [
               {
                 "id": 1,
-                "image": "/images/gallery/gallery-1.jpg",
+                "image": "/images/gallery/gallery-1.webp",
                 "alt": "Dog getting a warm soapy bath"
               },
               {
                 "id": 2,
-                "image": "/images/gallery/gallery-2.jpg",
+                "image": "/images/gallery/gallery-2.webp",
                 "alt": "Fluffy cat being groomed with brush"
               },
               {
                 "id": 3,
-                "image": "/images/gallery/gallery-3.jpg",
+                "image": "/images/gallery/gallery-3.webp",
                 "alt": "Cute puppy getting professional haircut"
               },
               {
                 "id": 4,
-                "image": "/images/gallery/gallery-4.jpg",
+                "image": "/images/gallery/gallery-4.webp",
                 "alt": "Golden Retriever health checkup by veterinarian"
               },
               {
                 "id": 5,
-                "image": "/images/gallery/gallery-5.jpg",
+                "image": "/images/gallery/gallery-5.webp",
                 "alt": "Playful kitten smiling while being petted"
               },
               {
                 "id": 6,
-                "image": "/images/gallery/gallery-6.jpg",
+                "image": "/images/gallery/gallery-6.webp",
                 "alt": "Happy border collie smiling on lush green grass"
               },
               {
                 "id": 7,
-                "image": "/images/gallery/gallery-7.jpg",
+                "image": "/images/gallery/gallery-7.webp",
                 "alt": "Veterinary nurse hugging gentle golden retriever"
               },
               {
                 "id": 8,
-                "image": "/images/gallery/gallery-8.jpg",
+                "image": "/images/gallery/gallery-8.webp",
                 "alt": "Cute curious kitten resting indoors"
               },
               {
                 "id": 9,
-                "image": "/images/gallery/gallery-9.jpg",
+                "image": "/images/gallery/gallery-9.webp",
                 "alt": "Small puppy playing with colorful toy ball"
               },
               {
                 "id": 10,
-                "image": "/images/gallery/gallery-10.jpg",
+                "image": "/images/gallery/gallery-10.webp",
                 "alt": "Adorable grey cat looking attentively"
               },
               {
                 "id": 11,
-                "image": "/images/gallery/gallery-11.jpg",
+                "image": "/images/gallery/gallery-11.webp",
                 "alt": "Golden puppy enjoying grooming bath"
               },
               {
                 "id": 12,
-                "image": "/images/gallery/gallery-12.jpg",
+                "image": "/images/gallery/gallery-12.webp",
                 "alt": "Smiling pet caregiver holding fluffy kitten"
               }
             ]
@@ -1125,7 +1125,7 @@
             "infoCard": {
               "title": "Contact Information",
               "description": "We'd love to hear from you! Reach out to us for appointments, enquiries, or any questions about our pet care services.",
-              "image": "/images/contact-pets.png",
+              "image": "/images/contact-pets.webp",
               "details": {
                 "location": {
                   "title": "Location",
@@ -1213,7 +1213,7 @@
               },
               "subtitle": "Fill in the details below and we'll confirm your appointment at the earliest."
             },
-            "image": "/images/appointment-pets.png",
+            "image": "/images/appointment-pets.webp",
             "form": {
               "labels": {
                 "name": "Your full name *",
@@ -1256,7 +1256,7 @@
       "breadcrumb": {
         "variants": {
           "PetcareBreadcrumb1": {
-            "defaultBgImage": "/images/breadcrumb-bg.png",
+            "defaultBgImage": "/images/breadcrumb-bg.webp",
             "parentLabel": "Home",
             "parentPath": "/",
             "pages": {

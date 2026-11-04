@@ -63,12 +63,12 @@ function NavbarContent({ data = site.navbar }: NavbarProps) {
           {/* CENTER: Desktop */}
           <div className="hidden lg:flex items-center gap-4 ">
             {data.navLinks.map((link) => {
-              const isActive =
-                link.href === "/"
-                  ? pathname === "/"
-                  : pathname === link.href || pathname?.startsWith(`${link.href}/`);
-
               const hasChildren = link.children && link.children.length > 0;
+              const isActive =
+                !hasChildren &&
+                (link.href === "/"
+                  ? pathname === "/"
+                  : Boolean(link.href && (pathname === link.href || pathname?.startsWith(`${link.href}/`))));
 
               return (
                 <div
@@ -157,12 +157,12 @@ function NavbarContent({ data = site.navbar }: NavbarProps) {
         {mobileMenuOpen && (
           <div className="lg:hidden pt-3 pb-2 border-t border-slate-100 mt-2.5 flex flex-col gap-1 max-h-[calc(100vh-120px)] overflow-y-auto">
             {data.navLinks.map((link) => {
-              const isActive =
-                link.href === "/"
-                  ? pathname === "/"
-                  : pathname === link.href || pathname?.startsWith(`${link.href}/`);
-
               const hasChildren = link.children && link.children.length > 0;
+              const isActive =
+                !hasChildren &&
+                (link.href === "/"
+                  ? pathname === "/"
+                  : Boolean(link.href && (pathname === link.href || pathname?.startsWith(`${link.href}/`))));
 
               return (
                 <div key={link.id} className="flex flex-col">
